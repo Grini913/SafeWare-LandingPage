@@ -1,15 +1,10 @@
-// --- MENÚ HAMBURGUESA ---
-let menuBtn = document.querySelector('#menu-btn');
-let menuWrapper = document.querySelector('.menu-wrapper');
+document.addEventListener("DOMContentLoaded", function() {
+  const toggle = document.getElementById("navbar-toggle");
+  const menu = document.getElementById("navbar-menu");
 
-if (menuBtn && menuWrapper) {
-  menuBtn.onclick = () => {
-    menuWrapper.classList.toggle('active');
-  };
-}
-
-window.onscroll = () => {
-  if (menuWrapper) {
-    menuWrapper.classList.remove('active');
-  }
-};
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    // cambia el ícono al cerrar/abrir
+    toggle.textContent = menu.classList.contains("active") ? "✕" : "☰";
+  });
+});

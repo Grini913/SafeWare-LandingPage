@@ -1,13 +1,9 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
+
 .hero{
-    /*position: relative;*/
-    width: 100%; /* ocupa todo el ancho */
-    height: 70vh; /* Altura completa de la pantalla */
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Altura completa de la pantalla */
        background: 
       linear-gradient(
         rgba(1, 67, 53, 0.87), 
@@ -23,12 +19,14 @@ html, body {
     background-size: cover; /* Escala la imagen para cubrir el área */
     background-repeat: no-repeat; /* Evita repetición */
     background-position: center center; /* Centra la imagen */
+      /*padding: 40px 20px;*/
+
 }
 
 .hero-content {
     padding: 10px;
     border-radius: 10px;
-    max-width: 800px;
+    max-width: 1200px;
 }
 
 
@@ -36,6 +34,7 @@ html, body {
     font-size: 1.2em;
     margin-bottom: 20px;
     font-weight: 400;
+    width: 100%; /* ocupa todo el ancho */
 }
 
 .hero-button {
@@ -56,7 +55,11 @@ html, body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-section {
-        height: 80vh; /* Menor altura en móviles */
+        list-style: none;
+        padding: 0;
+        margin: 0 auto 25px; /* espacio inferior para separar del botón */
+        width: fit-content; /* centra el bloque */
+        text-align: left; /* alinea el texto dentro */
     }
 
     .hero-title {

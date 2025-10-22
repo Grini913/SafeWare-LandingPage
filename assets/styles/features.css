@@ -3,6 +3,8 @@
     background-color: #ffffff;
     text-align: center;
     font-family: 'Inter', sans-serif;
+    
+
 }
 
 /* ====== Encabezado ====== */
@@ -124,7 +126,11 @@
 /* Versión móvil */
 @media (max-width: 768px) {
   .features-section {
-    padding: 60px 20px;
+  list-style: none;
+        padding: 0;
+        margin: 0 auto 25px; /* espacio inferior para separar del botón */
+        width: fit-content; /* centra el bloque */
+        text-align: center; /* alinea el texto dentro */
   }
 
   .features-header {

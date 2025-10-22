@@ -25,6 +25,8 @@
     font-size: 1.1em;
     color: #666;
     margin-bottom: 30px;
+        width: 100%; /* ocupa todo el ancho */
+
 }
 
 .plans-cards {
@@ -117,6 +119,8 @@
 
 /* Responsive Design para móviles */
 @media (max-width: 768px) {
+
+
     .plans-title {
         text-align: center;
         font-size: 2em;
@@ -153,7 +157,7 @@
         font-size: 1.2em;
     }
 
-    /* ✅ Lista centrada visualmente, pero con íconos a la izquierda */
+    /* Lista centrada visualmente, pero con íconos a la izquierda */
     .plan-features {
         list-style: none;
         padding: 0;

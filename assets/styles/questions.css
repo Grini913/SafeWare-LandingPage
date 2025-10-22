@@ -1,8 +1,10 @@
 .faq-section {
-    padding: 60px 20px;
+    padding: 60px 0px;
     background-color: #ffffff;
     text-align: center;
     font-family: 'Inter', sans-serif;
+        width: 100%; /* ocupa todo el ancho */
+
 }
 
 .faq-content {
@@ -19,7 +21,7 @@
 
 .faq-icon img {
     height: 60px;
-    margin-right: 15px;
+    margin-right: 0px;
 }
 
 .faq-header h2 {
@@ -81,7 +83,8 @@
     }
 
     .faq-icon img {
-        margin-right: 0;
+        text-align: center;
+
         margin-bottom: 10px;
     }
 

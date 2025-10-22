@@ -1,8 +1,9 @@
 .about-section {
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 0px;
   background-color: #fffdfd;
   font-family: 'Inter', sans-serif;
+  width: 100%; /* ocupa todo el ancho */
 }
 
 .about-section h2 {

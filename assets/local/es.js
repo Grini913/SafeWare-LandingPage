@@ -2,7 +2,7 @@ const es =  {
     navbar:{
       home: 'Inicio',
       feature: 'Caracteristicas',
-      about: 'Nosotros',
+      about: 'Acerca de Nosotros',
       plans: 'Planes',
       testimonials: 'Testimonios',
       faq: 'Preguntas',
@@ -40,35 +40,84 @@ const es =  {
         },
         btnmore: 'Descubre cómo funciona',
     },
-    about: {
-        about: {
+about: {
     title: 'Sobre SafeWare',
     subtitle: 'Combinamos seguridad y monitoreo inteligente en un solo nombre para proteger lo que más importa.',
     mission: {
-      title: 'Nuestra Misión',
-      text: 'SafeWare es un sistema de detección de anomalías para almacenes y áreas críticas que manejan materiales sensibles, integrando sensores de temperatura, humedad, vibraciones y fugas para ofrecer alertas en tiempo real, automatizar protocolos de seguridad y generar reportes útiles para auditorías. Con ello, ayudamos a reducir gastos, proteger el inventario y garantizar la continuidad operativa.',
-      highlight: 'Comprometidos con la seguridad y la eficiencia para tu tranquilidad'
+        title: 'Nuestra Misión',
+        text: 'SafeWare es un sistema de detección de anomalías para almacenes y áreas críticas que manejan materiales sensibles, integrando sensores de temperatura, humedad, vibraciones y fugas para ofrecer alertas en tiempo real, automatizar protocolos de seguridad y generar reportes útiles para auditorías. Con ello, ayudamos a reducir gastos, proteger el inventario y garantizar la continuidad operativa.',
+        highlight: 'Comprometidos con la seguridad y la eficiencia para tu tranquilidad'
     },
     problem: {
-      title: 'Antecedentes y problemática',
-      text: 'El almacenamiento de productos químicos, materiales inflamables y equipos mecánicos sensibles representa un desafío crítico en la gestión de seguridad industrial. Según LHDSA (2025), los principales riesgos incluyen accidentes por fugas, incendios, explosiones y daños por humedad, los cuales pueden derivar en accidentes graves si no se detectan y controlan oportunamente.'
+        title: 'Antecedentes y problemática',
+        text: 'El almacenamiento de productos químicos, materiales inflamables y equipos mecánicos sensibles representa un desafío crítico en la gestión de seguridad industrial. Según LHDSA (2025), los principales riesgos incluyen accidentes por fugas, incendios, explosiones y daños por humedad, los cuales pueden derivar en accidentes graves si no se detectan y controlan oportunamente.'
     },
-    sensors: {
-      temperature: {
-        title: 'Temperatura',
-        text: 'Monitoreo constante para prevenir sobrecalentamiento'
-      },
-      humidity: {
-        title: 'Humedad y fugas',
-        text: 'Detección temprana de fugas y niveles de humedad críticos'
-      },
-      vibration: {
-        title: 'Vibraciones',
-        text: 'Alertas por vibraciones anómalas en maquinaria sensible'
-      }
+    icons: {
+        temperature: {
+            title: 'Temperatura',
+            text: 'Monitoreo constante para prevenir sobrecalentamiento'
+        },
+        humidity: {
+            title: 'Humedad y fugas',
+            text: 'Detección temprana de fugas y niveles de humedad críticos'
+        },
+        vibration: {
+            title: 'Vibraciones',
+            text: 'Alertas por vibraciones anómalas en maquinaria sensible'
+        }
     }
-    }},
+},
 
+    plans: {
+    title: 'Nuestros Planes',
+    subtitle: 'Elige el plan perfecto para tus necesidades de seguridad',
+    cards: {
+        basic: {
+            name: 'Básico',
+            price: '$19',
+            features: [
+                'Monitoreo básico',
+                'Alertas por email',
+                'Soporte limitado'
+            ],
+            button: 'Seleccionar'
+        },
+        pro: {
+            name: 'Pro',
+            price: '$39',
+            features: [
+                'Monitoreo avanzado',
+                'Alertas en tiempo real',
+                'Soporte prioritario',
+                'Informes mensuales'
+            ],
+            button: 'Seleccionar'
+        },
+        premium: {
+            name: 'Premium',
+            price: '$59',
+            features: [
+                'Monitoreo completo',
+                'Automatización avanzada',
+                'Soporte 24/7',
+                'Informes personalizados'
+            ],
+            button: 'Seleccionar'
+        }
+    }
+}, 
+    testimonials: {
+    title: 'Lo que dicen nuestros clientes',
+    subtitle: 'Historias reales de cómo SafeWare mejora la seguridad y eficiencia operativa',
+    client1: {
+        text: 'Desde que implementamos el sistema, trabajar se volvió mucho más seguro y organizado. Ahora recibimos alertas en tiempo real en nuestros celulares y podemos actuar de inmediato ante cualquier riesgo. La comunicación y el control mejoraron por completo.',
+        name: 'Yamil, J. Ingeniero'
+    },
+    client2: {
+        text: 'Desde que implementamos esta solución, la coordinación entre nuestras áreas mejoró notablemente. Ahora tenemos un control total sobre cada proceso logístico, reduciendo tiempos y errores. Es una herramienta clave para mantener la eficiencia operativa.',
+        name: 'Brenda, M. Gerente de operaciones logísticas'
+    }
+    },
     faq: {
     title: 'Preguntas Frecuentes',
     items: {

@@ -6,8 +6,9 @@
               url("../img/Testimonios/fondo.png") center/cover no-repeat;
   color: #fff;
   text-align: center;
-  padding: 80px 20px;
+  padding: 40px 0px;
   font-family: 'Inter', sans-serif;
+
 }
 
 .testimonials-title {
@@ -88,7 +89,6 @@
 }
 
 /* --- RESPONSIVE --- */
-/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
   .testimonials-section {
     padding: 60px 8vw;
@@ -145,12 +145,18 @@
 }
 
 /* --- Pantallas muy pequeñas (menos de 400px) --- */
-@media (max-width: 400px) {
-  .testimonials-section {
-    padding: 12vw 5vw;
-  }
+@media (max-width: 990px){
+ .testimonials-section {
+  list-style: none;
+        padding: 2%;
+        margin: 0 auto 25px; /* espacio inferior para separar del botón */
+        width: fit-content; /* centra el bloque */
+        text-align: center; /* alinea el texto dentro */
+ }
 
   .testimonial-card {
+    width: 90%; /* 🔹 Ocupa el 90% del ancho de pantalla */
+    max-width: 350px; /* 🔹 Evita que sea demasiado grande */
     padding: 7vw;
     border-radius: 12px;
   }
