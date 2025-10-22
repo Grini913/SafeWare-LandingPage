@@ -69,4 +69,57 @@ const es =  {
     }
     }},
 
+    faq: {
+    title: 'Preguntas Frecuentes',
+    items: {
+        1: {
+            question: '¿Qué es SafeWare?',
+            answer: 'SafeWare es una solución avanzada que utiliza inteligencia artificial para detectar riesgos en tiempo real, protegiendo tu industria las 24 horas del día.'
+        },
+        2: {
+            question: '¿Quién puede usar SafeWare?',
+            answer: 'SafeWare está diseñado para industrias como manufactura, logística y almacenes que necesitan monitoreo continuo y seguridad avanzada.'
+        },
+        3: {
+            question: '¿Necesito conocimientos técnicos para usarlo?',
+            answer: 'No, SafeWare ofrece una interfaz intuitiva que permite a cualquier usuario configurar alertas y monitorear riesgos sin complicaciones.'
+        },
+        4: {
+            question: '¿Es compatible con dispositivos móviles?',
+            answer: 'Sí, SafeWare es completamente responsivo y accesible desde smartphones, tablets y computadoras sin perder funcionalidad.'
+        },
+        5: {
+            question: '¿Cómo mejora SafeWare mi negocio?',
+            answer: 'SafeWare reduce costos al prevenir incidentes, optimiza operaciones con automatización y proporciona informes detallados para tomar decisiones informadas.'
+        }
+    }
+  },
+
+    contact: {
+    title: 'Hablemos de cómo podemos <span>proteger tu negocio.</span>',
+    description: 'Estamos aquí para ayudarte a proteger lo que más importa. Escríbenos y descubre cómo <b>SafeWare</b> puede optimizar la seguridad y el mantenimiento en tus instalaciones.',
+    form: {
+        title: 'Envíanos un mensaje',
+        name: 'Nombre completo',
+        email: 'Correo electrónico',
+        company: 'Empresa (Opcional)',
+        message: 'Mensaje',
+        button: 'Contáctanos'
+    },
+    details: {
+        location: {
+            title: 'Nuestra oficina',
+            text: 'Ubicación oficina'
+        },
+        email: {
+            title: 'Email de Contacto',
+            text: 'info@safeware.com'
+        },
+        phone: {
+            title: 'Teléfono',
+            text: '+1 (234) 567-8900'
+        }
+    }
+},
+
 }

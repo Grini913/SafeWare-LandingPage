@@ -3,9 +3,10 @@
 
 .plans-section {
     padding: 60px 20px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     text-align: center;
     font-family: 'Inter', sans-serif;
+    margin: 0;
 }
 
 .plans-header {
@@ -32,13 +33,15 @@
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%; /* Asegura que ocupe todo el contenedor */
 }
 
 .plan-card {
+    align-items: center;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.453);
     transition: transform 0.3s;
 }
 
@@ -47,7 +50,7 @@
 }
 
 .plan-card.featured {
-    background: linear-gradient(90deg, #263D67, #2DD574);
+    background: linear-gradient(180deg, #263D67, #2DD574);
     color: #fff;
     border: 2px solid #2DD574;
 }
@@ -115,26 +118,71 @@
 /* Responsive Design para móviles */
 @media (max-width: 768px) {
     .plans-title {
+        text-align: center;
         font-size: 2em;
     }
 
     .plans-subtitle {
+        text-align: center;
         font-size: 1em;
     }
 
+    /* 🔸 Una columna en móvil y tarjetas centradas */
     .plans-cards {
-        grid-template-columns: 1fr; /* Una columna en móviles */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
     }
 
     .plan-card {
-        margin-bottom: 20px;
+        width: 90%; /* 🔹 Ocupa el 90% del ancho de pantalla */
+        max-width: 350px; /* 🔹 Evita que sea demasiado grande */
+        margin: 0 auto 20px;
+        padding: 25px 15px;
     }
 
     .plan-name {
+        text-align: center;
         font-size: 1.5em;
     }
 
     .plan-price {
+        text-align: center;
         font-size: 1.2em;
+    }
+
+    /* ✅ Lista centrada visualmente, pero con íconos a la izquierda */
+    .plan-features {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto 25px; /* espacio inferior para separar del botón */
+        width: fit-content; /* centra el bloque */
+        text-align: left; /* alinea el texto dentro */
+    }
+
+    .plan-features li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 6px;
+        justify-content: flex-start;
+        font-size: 0.95em;
+    }
+
+    .plan-features li::before {
+        content: "✔";
+        color: #2DD574;
+        font-weight: bold;
+        flex-shrink: 0;
+    }
+
+    /* 🔹 Botón siempre debajo y centrado */
+    .plan-button {
+        display: block;
+        margin: 10px auto 0;
+        text-align: center;
+        width: fit-content;
     }
 }

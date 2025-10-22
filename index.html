@@ -7,17 +7,19 @@
     <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!-- Styles -->
-     <link rel="stylesheet"  href="assets/styles/aboutUs.css"/>
+    
+  <!-- Styles -->
      <link rel="stylesheet"  href="assets/styles/header.css"/>
      <link rel="stylesheet"  href="assets/styles/hero.css"/>
      <link rel="stylesheet"  href="assets/styles/features.css"/>
+     <link rel="stylesheet"  href="assets/styles/aboutUs.css"/>
      <link rel="stylesheet"  href="assets/styles/plans.css"/>
      <link rel="stylesheet"  href="assets/styles/testimonials.css"/>
+     <link rel="stylesheet"  href="assets/styles/questions.css"/>
      <link rel="stylesheet"  href="assets/styles/contact.css"/>
      <link rel="stylesheet"  href="assets/styles/footer.css"/>
 
@@ -33,7 +35,7 @@
         <button class="navbar__toggle" id="navToggle" aria-label="Menú">
          <span class="material-icons">menu</span>
          </button>
-
+         
             <div class="navbar__menu">
                 <ul class="navbar__links">
                     <li><a href="#home" data-i18n="navbar.home">Home</a></li>
@@ -215,40 +217,98 @@
 
     <!-- FAQ -->
 
+    <section id="faq" class="faq-section">
+    <div class="faq-content">
+        <div class="faq-header">
+            <div class="faq-icon">
+                <img src="assets/img/logo2.png" alt="SafeWare Logo">
+            </div>
+            <h2 data-i18n="faq.title">Preguntas Frecuentes</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)" data-i18n="faq.items.1.question">
+                    ¿Qué es SafeWare?
+                    <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.items.1.answer">SafeWare es una solución avanzada que utiliza inteligencia artificial para detectar riesgos en tiempo real, protegiendo tu industria las 24 horas del día.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)" data-i18n="faq.items.2.question">
+                    ¿Quién puede usar SafeWare?
+                    <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.items.2.answer">SafeWare está diseñado para industrias como manufactura, logística y almacenes que necesitan monitoreo continuo y seguridad avanzada.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)" data-i18n="faq.items.3.question">
+                    ¿Necesito conocimientos técnicos para usarlo?
+                    <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.items.3.answer">No, SafeWare ofrece una interfaz intuitiva que permite a cualquier usuario configurar alertas y monitorear riesgos sin complicaciones.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)" data-i18n="faq.items.4.question">
+                    ¿Es compatible con dispositivos móviles?
+                    <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.items.4.answer">Sí, SafeWare es completamente responsivo y accesible desde smartphones, tablets y computadoras sin perder funcionalidad.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)" data-i18n="faq.items.5.question">
+                    ¿Cómo mejora SafeWare mi negocio?
+                    <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.items.5.answer">SafeWare reduce costos al prevenir incidentes, optimiza operaciones con automatización y proporciona informes detallados para tomar decisiones informadas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     <!-- contactanos -->
-   <section id="contact" class="contact-section">
+<section id="contact" class="contact-section">
   <div class="contact-container">
     <!-- Columna izquierda -->
     <div class="contact-info">
-      <h2>
+      <h2 data-i18n="contact.title">
         Hablemos de cómo<br>
         podemos <span>proteger tu negocio.</span>
       </h2>
-      <p>
+      <p data-i18n="contact.description">
         Estamos aquí para ayudarte a proteger lo que más importa. <br>
-        Escríbenos y descubre cómo <b>TheAnalytics</b> puede optimizar la seguridad y el mantenimiento en tus instalaciones.
+        Escríbenos y descubre cómo <b>SafeWare</b> puede optimizar la seguridad y el mantenimiento en tus instalaciones.
       </p>
 
       <ul class="contact-details">
         <li>
           <span class="material-icons">location_on</span>
           <div>
-            <strong>Nuestra oficina</strong>
-            <p>Ubicación oficina</p>
+            <strong data-i18n="contact.details.location.title">Nuestra oficina</strong>
+            <p data-i18n="contact.details.location.text">Ubicación oficina</p>
           </div>
         </li>
         <li>
           <span class="material-icons">email</span>
           <div>
-            <strong>Email de Contacto</strong>
-            <p>EmaildeContacto@Safetrack.com</p>
+            <strong data-i18n="contact.details.email.title">Email de Contacto</strong>
+            <p data-i18n="contact.details.email.text">info@safeware.com</p>
           </div>
         </li>
         <li>
           <span class="material-icons">call</span>
           <div>
-            <strong>Teléfono</strong>
-            <p>+1 (XXXX) XXXX-XXXXX</p>
+            <strong data-i18n="contact.details.phone.title">Teléfono</strong>
+            <p data-i18n="contact.details.phone.text">+1 (234) 567-8900</p>
           </div>
         </li>
       </ul>
@@ -256,13 +316,13 @@
 
     <!-- Columna derecha -->
     <div class="contact-form">
-      <h3>Envíanos un mensaje</h3>
+      <h3 data-i18n="contact.form.title">Envíanos un mensaje</h3>
       <form>
-        <input type="text" placeholder="Nombre completo" required>
-        <input type="email" placeholder="Correo electrónico" required>
-        <input type="text" placeholder="Empresa (Opcional)">
-        <textarea placeholder="Mensaje" rows="4" required></textarea>
-        <button type="submit">Contáctanos</button>
+        <input type="text" data-i18n-placeholder="contact.form.name" placeholder="Nombre completo" required>
+        <input type="email" data-i18n-placeholder="contact.form.email" placeholder="Correo electrónico" required>
+        <input type="text" data-i18n-placeholder="contact.form.company" placeholder="Empresa (Opcional)">
+        <textarea data-i18n-placeholder="contact.form.message" placeholder="Mensaje" rows="4" required></textarea>
+        <button type="submit" data-i18n="contact.form.button">Contáctanos</button>
       </form>
     </div>
   </div>
@@ -279,7 +339,7 @@
             <p>Protegiendo tu industria con tecnología avanzada.</p>
             <div class="footer-social">
                 <a href="#" aria-label="Facebook"><span class="material-icons">facebook</span></a>
-                <a href="#" aria-label="Twitter"><span class="material-icons">twitter</span></a>
+                <a href="#" aria-label="Correo"><span class="material-icons">mail</span></a>
                 <a href="#" aria-label="LinkedIn"><span class="material-icons">linkedin</span></a>
             </div>
         </div>
@@ -307,6 +367,7 @@
 
 </main>
   <script src="assets/scrips/hmenu.js"></script>
+  <script src="assets/scrips/DesplegabreQuestions.js"></script>
 
 </body>
 </html>
