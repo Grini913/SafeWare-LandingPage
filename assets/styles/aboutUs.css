@@ -1,0 +1,170 @@
+.about-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fffdfd;
+  font-family: 'Inter', sans-serif;
+}
+
+.about-section h2 {
+  font-size: 2.5em;
+  color: #15B097;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* --- CONTENEDOR PRINCIPAL DE MISIÓN --- */
+.mission-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);*/
+  max-width: 900px;
+  margin: 0 auto 50px;
+}
+
+.mission-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.mission-text h3 {
+  font-size: 1.7em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.mission-text p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+}
+
+.mission-highlight {
+  background-color: #e0f7f0;
+  padding: 10px;
+  border-left: 4px solid #15B097;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 10px;
+  border-radius: 4px;
+
+}
+
+.mission-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.mission-image img {
+  width: 100%;
+  max-width: 500px; /* Imagen más grande */
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mission-image img:hover {
+  transform: scale(1.03); /* Pequeño efecto al pasar el mouse */
+}
+
+/* --- PROBLEM BOX --- */
+.problem-box {
+  background-color: #fff;
+  border-left: 4px solid #ff4444;
+  padding: 20px;
+  text-align: left;
+  max-width: 900px; /* Coincide con el contenedor de misión */
+  margin: 0 auto 50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  color: #444;
+}
+
+.problem-box .warning {
+  color: #ff4444;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* --- ICONOS --- */
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 230px;
+}
+
+.icon-container .material-icons {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #2ecc71;
+}
+
+.icon-container p {
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* --- RESPONSIVE PARA ESCRITORIO --- */
+@media (min-width: 992px) {
+  .mission-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Centra verticalmente imagen y texto */
+    text-align: left;
+    padding: 40px 60px;
+    gap: 60px;
+  }
+
+  .mission-text {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .mission-image img {
+    max-width: 520px;
+    margin-top: 0;
+  }
+}
+
+/* --- RESPONSIVE PARA TABLET Y MÓVIL --- */
+@media (max-width: 991px) {
+  .mission-container {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .mission-text {
+    text-align: center;
+  }
+
+  .mission-image img {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+}

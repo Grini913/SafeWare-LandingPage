@@ -1,0 +1,67 @@
+.hero{
+    /*position: relative;*/
+    width: 100%; /* ocupa todo el ancho */
+    height: 70vh; /* Altura completa de la pantalla */
+       background: 
+      linear-gradient(
+        rgba(1, 67, 53, 0.87), 
+        rgba(1, 67, 53, 0.87)
+      ),
+      url("../img/FondoHome.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; /* Texto blanco para contraste con el fondo */
+    font-family: 'Inter', sans-serif;
+    background-size: cover; /* Escala la imagen para cubrir el área */
+    background-repeat: no-repeat; /* Evita repetición */
+    background-position: center center; /* Centra la imagen */
+}
+
+.hero-content {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+
+.hero-subtitle {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #2DD574; /* Verde claro similar al navbar */
+    color: #263D67; /* Azul oscuro para contraste */
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #27ae60; /* Verde más oscuro al hacer hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 80vh; /* Menor altura en móviles */
+    }
+
+    .hero-title {
+        font-size: 1.8em;
+    }
+
+    .hero-subtitle {
+        font-size: 1em;
+    }
+
+    .hero-button {
+        padding: 10px 20px;
+    }
+}

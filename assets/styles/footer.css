@@ -1,0 +1,111 @@
+
+.footer-section {
+    background-color: #195046;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: 'Inter', sans-serif;
+}
+.footer-logo {
+    width: 200px;
+    height: 80px;
+    border-radius: 4px;
+    display: flex;
+    flex-shrink: 0;
+
+}
+.footer-logo img {
+    
+    height: 200px;
+    object-fit: contain;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-column h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-column p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-column .material-icons {
+    margin-right: 10px;
+    color: #2DD574;
+    font-size: 1.2em;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul a:hover {
+    color: #2DD574;
+}
+
+.footer-social a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #2DD574;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Responsive Design para móviles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+
+    .footer-column p {
+        justify-content: center;
+    }
+
+    .footer-social a {
+        margin: 0 10px;
+    }
+}

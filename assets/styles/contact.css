@@ -1,0 +1,151 @@
+/* --- SECCIÓN DE CONTACTO --- */
+.contact-section {
+  padding: 80px 10%;
+  background-color: #fff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* --- COLUMNA IZQUIERDA --- */
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-info h2 {
+  font-size: 2.5rem;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.contact-info h2 span {
+  color: #15B097; /* verde-azulado */
+  font-weight: 700;
+}
+
+.contact-info p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.contact-details .material-icons {
+  font-size: 28px;
+  color: #15B097;
+  
+  flex-shrink: 0;
+}
+
+.contact-details strong {
+  color: #000;
+}
+
+.contact-details p {
+  color: #555;
+  margin: 0;
+}
+
+/* --- COLUMNA DERECHA (FORMULARIO) --- */
+.contact-form {
+  flex: 1;
+  min-width: 320px;
+  background: #fff;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 30px 25px;
+}
+
+.contact-form h3 {
+  font-size: 1.4rem;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #15B097;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #15B097;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #009674;
+}
+
+/* --- RESPONSIVE (MÓVIL) --- */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 50px 5%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  .contact-info h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .contact-info p {
+    text-align: center;
+  }
+
+  .contact-details {
+    text-align: left;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}

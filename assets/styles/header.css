@@ -1,0 +1,70 @@
+header { 
+    background: linear-gradient(90deg, #263D67, #2DD574); 
+    padding: 10px 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    position: fixed; /* hace que el header quede fijo */
+    top: 0; /* lo mantiene pegado arriba */
+    left: 0;
+    width: 100%; /* ocupa todo el ancho */
+    z-index: 1000; /* asegura que quede sobre el resto del contenido */
+} 
+
+.navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    font-family: 'Inter', sans-serif; } 
+
+.navbar_logo { 
+    display: flex; 
+    align-items: center; 
+    color: #fff; 
+    font-size: 1.5em; 
+    font-weight: bold; }
+
+.navbar_logo img { 
+    height: 65px; 
+    margin-right: 15px; } 
+
+.navbar__menu { 
+    display: flex; 
+    align-items: center; } 
+    
+.navbar__links { 
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; } 
+
+.navbar__links li { 
+    margin: 0 15px; 
+    position: relative; /* Añadido para que los enlaces sean el contexto de los pseudo-elementos */ } 
+
+.navbar__links a { 
+    color: #fff; text-decoration: 
+    none; font-size: 1em; position: relative; /* Necesario para posicionar el ::after correctamente */ 
+    transition: color 0.3s, width 0.3s; /* Añadido width a la transición */ 
+} 
+.navbar__links a::after { 
+    content: ""; position: absolute; bottom: -5px; /* Ajusta la posición debajo del texto */ 
+    left: 0; width: 0; /* Inicialmente cero, aparece al hacer hover */ 
+    height: 2px; background: #fff; /* Línea blanca para mejor contraste */ 
+    transition: width 0.3s ease; /* Transición suave para el ancho */ 
+} 
+
+.navbar__links a:hover::after { width: 100%; /* Expande la línea al 100% del ancho del enlace al hacer hover */ } 
+
+.buttonC { margin-left: 20px; } 
+.buttonC a { background-color: #fefefe; color: #043873; padding: 10px 20px; 
+    border-radius: 5px; text-decoration: none; font-weight: bold; transition: background-color 0.3s; } 
+.buttonC a:hover { background-color: #ffffff; box-shadow: 0 8px 12px rgba(39, 3, 244, 0.416); } 
+
+/* Responsive Design */ 
+@media (max-width: 768px) { 
+    .navbar { flex-direction: column; padding: 10px; } 
+    .navbar_logo { margin-bottom: 10px; } 
+    .navbar__menu { flex-direction: column; align-items: center; } 
+    .navbar__links { flex-direction: column; text-align: center; } 
+    .navbar__links li { margin: 10px 0; } .buttonC { margin: 10px 0 0; } }
