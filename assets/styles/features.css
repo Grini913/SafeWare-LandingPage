@@ -127,8 +127,7 @@
 @media (max-width: 768px) {
   .features-section {
   list-style: none;
-        padding: 0;
-        margin: 0 auto 25px; /* espacio inferior para separar del botón */
+       
         width: fit-content; /* centra el bloque */
         text-align: center; /* alinea el texto dentro */
   }

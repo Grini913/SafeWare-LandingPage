@@ -55,9 +55,18 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.material-icons faq-arrow{
+    color: #263D67;
+    background: none;
+    border: none;
+    font-size: 1.2em;
+}
 .faq-arrow {
     transition: transform 0.3s;
+    font-size: 1.2em; /* tamaño de la flecha */
+    margin-left: 10px; /* separa un poco del texto */
+    display: inline-flex;
+    align-items: center;
 }
 
 .faq-item.active .faq-arrow {

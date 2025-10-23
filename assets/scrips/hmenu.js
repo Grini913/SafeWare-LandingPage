@@ -1,10 +1,6 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const toggle = document.getElementById("navbar-toggle");
-  const menu = document.getElementById("navbar-menu");
+const hamburguesa = document.querySelector('#hamburguesa');
+const menu = document.querySelector('.navbar__menu');
 
-  toggle.addEventListener("click", () => {
-    menu.classList.toggle("active");
-    // cambia el ícono al cerrar/abrir
-    toggle.textContent = menu.classList.contains("active") ? "✕" : "☰";
-  });
+hamburguesa.addEventListener('click', () => {
+  menu.classList.toggle('show');
 });

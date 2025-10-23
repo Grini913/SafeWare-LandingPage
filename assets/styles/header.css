@@ -1,6 +1,7 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 header { 
     display: flex;
@@ -10,7 +11,7 @@ header {
     position: fixed; /* hace que el header quede fijo */
     top: 0; /* lo mantiene pegado arriba */
     left: 0;
-     width: 100%;
+    width: 100%;
     z-index: 100; /* asegura que quede sobre el resto del contenido */
     align-items: center; /* Centra verticalmente */
     transition: padding 0.3s ease; /* suaviza el cambio de tamaño */
@@ -75,22 +76,57 @@ header {
 .buttonC a:hover { background-color: #ffffff; box-shadow: 0 8px 12px rgba(39, 3, 244, 0.416); } 
 
 /* === Botón Hamburguesa === */
-.navbar__toggle {
+.hamburguesa {
   display: none; /* oculto por defecto */
   font-size: 1.8em;
+  background: none;
+  border: none;
   color: #fff;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 
 /* Responsive Design */ 
 @media (max-width: 900px) { 
-    .header {list-style: none;
+    /*.header {list-style: none;
         padding: 0;
         width: fit-content; /* centra el bloque */
-        text-align: left; /* alinea el texto dentro */}
-    .navbar { flex-direction: column; padding: 1%;} 
-    .navbar_logo { margin-bottom: 10px; left: 0px; } 
-    .navbar__menu { flex-direction: column; align-items: center; } 
-    .navbar__links { flex-direction: column; text-align: center; } 
-    .navbar__links li { margin: 10px 0; } .buttonC { margin: 10px 0 0; } }
+        /*text-align: left; /* alinea el texto dentro */
+
+    .navbar
+    .navbar { 
+        justify-content: space-between;
+        flex-direction: column; 
+        padding: 1%;} 
+    .navbar_logo { 
+        margin-bottom: 10px; 
+        left: 0px; } 
+    .navbar__menu { 
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color:  #195046;
+        flex-direction: column; 
+        align-items: center; } 
+    .navbar__links {  
+        flex-direction: column; text-align: center; } 
+    .navbar__links li { margin: 10px 0; } 
+    .buttonC { margin: 10px 0 0; }
+    .hamburguesa {
+        z-index: 100; /* asegura que quede sobre el resto del contenido */
+        align-items: center; /* Centra verticalmente */
+        display: flex;
+    }
+    .navbar__menu.show {
+        max-width: 1200px; 
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        align-items: center; /* Centra verticalmente */
+        padding: 5.5%;
+    }
+
+}

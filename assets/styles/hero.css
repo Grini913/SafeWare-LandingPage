@@ -55,11 +55,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-section {
-        list-style: none;
-        padding: 0;
-        margin: 0 auto 25px; /* espacio inferior para separar del botón */
-        width: fit-content; /* centra el bloque */
-        text-align: left; /* alinea el texto dentro */
+        height: 80vh; /* Menor altura en móviles */
     }
 
     .hero-title {

@@ -1,9 +1,11 @@
-<html lang="en">
+<html lang="es">
 <head>
     <link rel="icon" href="./assets/img/logo.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheAnalytics-SafeWare</title>
+    <meta name="language" content="es">
+    <meta name="author" content="TheAnalytics">
     <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +24,8 @@
      <link rel="stylesheet"  href="assets/styles/questions.css"/>
      <link rel="stylesheet"  href="assets/styles/contact.css"/>
      <link rel="stylesheet"  href="assets/styles/footer.css"/>
+     <link rel="stylesheet"  href="assets/styles/buttonT.css"/>
+     
 
 </head>
 <body>
@@ -32,7 +36,7 @@
             <img src="assets/img/logo2.png" alt="SafeWareLogo"/>
           </div>
         <!-- Botón de menú hamburguesa -->
-        <button class="navbar__toggle" id="navToggle" aria-label="Menú">
+        <button class="hamburguesa" id="hamburguesa" aria-label="Menú">
          <span class="material-icons">menu</span>
          </button>
 
@@ -99,15 +103,18 @@
 
         <!-- About Us -->
 <section class="about-section" id="about">
-  <h2 id="about-title">Sobre SafeWare</h2>
-  <p class="subtitle" id="about-subtitle">Combinamos seguridad y monitoreo inteligente en un solo nombre para proteger lo que más importa.</p>
+  <h2 id="about-title" data-i18n="about.title">Sobre SafeWare</h2>
+  <p class="subtitle" id="about-subtitle" data-i18n="about.subtitle">
+    Combinamos seguridad y monitoreo inteligente en un solo nombre para proteger lo que más importa.
+  </p>
 
   <div class="mission-container">
     <div class="mission-text">
-      <h3 id="about-mission-title">Nuestra Misión</h3>
-      <p id="about-mission-text">
+      <h3 id="about-mission-title" data-i18n="about.mission.title">Nuestra Misión</h3>
+      <p id="about-mission-text" data-i18n="about.mission.text">
         SafeWare es un sistema de detección de anomalías para almacenes y áreas críticas que manejan materiales sensibles, integrando sensores de temperatura, humedad, vibraciones y fugas para ofrecer alertas en tiempo real, automatizar protocolos de seguridad y generar reportes útiles para auditorías. Con ello, ayudamos a reducir gastos, proteger el inventario y garantizar la continuidad operativa.
-      <p class="mission-highlight" id="about-mission-highlight">
+      </p>
+      <p class="mission-highlight" id="about-mission-highlight" data-i18n="about.mission.highlight">
         Comprometidos con la seguridad y la eficiencia para tu tranquilidad
       </p>
     </div>
@@ -116,10 +123,10 @@
     </div>
   </div>
 
-  <h3 id="about-problem-title">Antecedentes y problemática</h3>
+  <h3 id="about-problem-title" data-i18n="about.problem.title">Antecedentes y problemática</h3>
   <div class="problem-box">
     <span class="warning">⚠</span>
-    <span id="about-problem-text">
+    <span id="about-problem-text" data-i18n="about.problem.text">
       El almacenamiento de productos químicos, materiales inflamables y equipos mecánicos sensibles representa un desafío crítico en la gestión de seguridad industrial. Según LHDSA (2025), los principales riesgos incluyen accidentes por fugas, incendios, explosiones y daños por humedad, los cuales pueden derivar en accidentes graves si no se detectan y controlan oportunamente.
     </span>
   </div>
@@ -127,58 +134,71 @@
   <div class="icon-row">
     <div class="icon-container">
       <span class="material-icons" style="color: #15B097;">thermostat</span>
-      <p><strong id="about-temp-title">Temperatura</strong><br><span id="about-temp-text">Monitoreo constante para prevenir sobrecalentamiento</span></p>
+      <p>
+        <strong id="about-temp-title" data-i18n="about.icons.temperature.title">Temperatura</strong><br>
+        <span id="about-temp-text" data-i18n="about.icons.temperature.text">Monitoreo constante para prevenir sobrecalentamiento</span>
+      </p>
     </div>
     <div class="icon-container">
       <span class="material-icons" style="color: #15B097;">water_drop</span>
-      <p><strong id="about-humidity-title">Humedad y fugas</strong><br><span id="about-humidity-text">Detección temprana de fugas y niveles de humedad críticos</span></p>
+      <p>
+        <strong id="about-humidity-title" data-i18n="about.icons.humidity.title">Humedad y fugas</strong><br>
+        <span id="about-humidity-text" data-i18n="about.icons.humidity.text">Detección temprana de fugas y niveles de humedad críticos</span>
+      </p>
     </div>
     <div class="icon-container">
       <span class="material-icons" style="color: #15B097;">vibration</span>
-      <p><strong id="about-vibration-title">Vibraciones</strong><br><span id="about-vibration-text">Alertas por vibraciones anómalas en maquinaria sensible</span></p>
+      <p>
+        <strong id="about-vibration-title" data-i18n="about.icons.vibration.title">Vibraciones</strong><br>
+        <span id="about-vibration-text" data-i18n="about.icons.vibration.text">Alertas por vibraciones anómalas en maquinaria sensible</span>
+      </p>
     </div>
   </div>
 </section>
-    <!-- Planes/Servicios -->
+
+<!-- Planes/Servicios -->
 <section id="plans" class="plans-section">
-    <div class="plans-header">
-        <h2 class="plans-title">Nuestros Planes</h2>
-        <p class="plans-subtitle">Elige el plan perfecto para tus necesidades de seguridad</p>
+  <div class="plans-header">
+    <h2 class="plans-title" data-i18n="plans.title">Nuestros Planes</h2>
+    <p class="plans-subtitle" data-i18n="plans.subtitle">Elige el plan perfecto para tus necesidades de seguridad</p>
+  </div>
+
+  <div class="plans-cards">
+    <div class="plan-card">
+      <h3 class="plan-name" data-i18n="plans.cards.basic.name">Básico</h3>
+      <p class="plan-price" data-i18n="plans.cards.basic.price">$19<span>/mes</span></p>
+      <ul class="plan-features" data-i18n="plans.cards.basic.features">
+        <li>Monitoreo básico</li>
+        <li>Alertas por email</li>
+        <li>Soporte limitado</li>
+      </ul>
+      <a href="#select-plan" class="plan-button" data-i18n="plans.cards.basic.button">Seleccionar</a>
     </div>
-    <div class="plans-cards">
-        <div class="plan-card">
-            <h3 class="plan-name">Básico</h3>
-            <p class="plan-price">$19<span>/mes</span></p>
-            <ul class="plan-features">
-                <li>Monitoreo básico</li>
-                <li>Alertas por email</li>
-                <li>Soporte limitado</li>
-            </ul>
-            <a href="#select-plan" class="plan-button">Seleccionar</a>
-        </div>
-        <div class="plan-card featured">
-            <h3 class="plan-name">Pro</h3>
-            <p class="plan-price">$39<span>/mes</span></p>
-            <ul class="plan-features">
-                <li>Monitoreo avanzado</li>
-                <li>Alertas en tiempo real</li>
-                <li>Soporte prioritario</li>
-                <li>Informes mensuales</li>
-            </ul>
-            <a href="#select-plan" class="plan-button">Seleccionar</a>
-        </div>
-        <div class="plan-card">
-            <h3 class="plan-name">Premium</h3>
-            <p class="plan-price">$59<span>/mes</span></p>
-            <ul class="plan-features">
-                <li>Monitoreo completo</li>
-                <li>Automatización avanzada</li>
-                <li>Soporte 24/7</li>
-                <li>Informes personalizados</li>
-            </ul>
-            <a href="#select-plan" class="plan-button">Seleccionar</a>
-        </div>
+
+    <div class="plan-card featured">
+      <h3 class="plan-name" data-i18n="plans.cards.pro.name">Pro</h3>
+      <p class="plan-price" data-i18n="plans.cards.pro.price">$39<span>/mes</span></p>
+      <ul class="plan-features" data-i18n="plans.cards.pro.features">
+        <li>Monitoreo avanzado</li>
+        <li>Alertas en tiempo real</li>
+        <li>Soporte prioritario</li>
+        <li>Informes mensuales</li>
+      </ul>
+      <a href="#select-plan" class="plan-button" data-i18n="plans.cards.pro.button">Seleccionar</a>
     </div>
+
+    <div class="plan-card">
+      <h3 class="plan-name" data-i18n="plans.cards.premium.name">Premium</h3>
+      <p class="plan-price" data-i18n="plans.cards.premium.price">$59<span>/mes</span></p>
+      <ul class="plan-features" data-i18n="plans.cards.premium.features">
+        <li>Monitoreo completo</li>
+        <li>Automatización avanzada</li>
+        <li>Soporte 24/7</li>
+        <li>Informes personalizados</li>
+      </ul>
+      <a href="#select-plan" class="plan-button" data-i18n="plans.cards.premium.button">Seleccionar</a>
+    </div>
+  </div>
 </section>
 
     <!-- Testimonios -->
@@ -215,8 +235,8 @@
   </div>
 </section>
 
-    <!-- FAQ -->
 
+<!-- FAQ -->
     <section id="faq" class="faq-section">
     <div class="faq-content">
         <div class="faq-header">
@@ -227,45 +247,45 @@
         </div>
         <div class="faq-list">
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)" data-i18n="faq.items.1.question">
-                    ¿Qué es SafeWare?
-                    <span class="faq-arrow">▼</span>
+                <div class="faq-question" onclick="toggleFaq(this)">
+                     <span class="faq-text" data-i18n="faq.items.1.question">¿Qué es SafeWare?</span>
+                    <span class="material-icons faq-arrow" style="color: #263D67;"   id="faq-arrow">expand_more</span>
                 </div>
                 <div class="faq-answer">
                     <p data-i18n="faq.items.1.answer">SafeWare es una solución avanzada que utiliza inteligencia artificial para detectar riesgos en tiempo real, protegiendo tu industria las 24 horas del día.</p>
                 </div>
             </div>
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)" data-i18n="faq.items.2.question">
-                    ¿Quién puede usar SafeWare?
-                    <span class="faq-arrow">▼</span>
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span class="faq-text" data-i18n="faq.items.1.question">¿Quién puede usar SafeWare?</span>
+                    <span class="material-icons faq-arrow" style="color: #263D67;" id="faq-arrow">expand_more</span>
                 </div>
                 <div class="faq-answer">
                     <p data-i18n="faq.items.2.answer">SafeWare está diseñado para industrias como manufactura, logística y almacenes que necesitan monitoreo continuo y seguridad avanzada.</p>
                 </div>
             </div>
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)" data-i18n="faq.items.3.question">
-                    ¿Necesito conocimientos técnicos para usarlo?
-                    <span class="faq-arrow">▼</span>
+                <div class="faq-question" onclick="toggleFaq(this)" >
+                  <span data-i18n="faq.items.3.question">¿Necesito conocimientos técnicos para usarlo?</span>
+                    <span class="material-icons faq-arrow" style="color: #263D67;" id="faq-arrow">expand_more</span>
                 </div>
                 <div class="faq-answer">
                     <p data-i18n="faq.items.3.answer">No, SafeWare ofrece una interfaz intuitiva que permite a cualquier usuario configurar alertas y monitorear riesgos sin complicaciones.</p>
                 </div>
             </div>
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)" data-i18n="faq.items.4.question">
-                    ¿Es compatible con dispositivos móviles?
-                    <span class="faq-arrow">▼</span>
+                <div class="faq-question" onclick="toggleFaq(this)" >
+                    <span data-i18n="faq.items.4.question">¿Es compatible con dispositivos móviles?</span>
+                    <span class="material-icons faq-arrow" style="color: #263D67;" id="faq-arrow">expand_more</span>
                 </div>
                 <div class="faq-answer">
                     <p data-i18n="faq.items.4.answer">Sí, SafeWare es completamente responsivo y accesible desde smartphones, tablets y computadoras sin perder funcionalidad.</p>
                 </div>
             </div>
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)" data-i18n="faq.items.5.question">
-                    ¿Cómo mejora SafeWare mi negocio?
-                    <span class="faq-arrow">▼</span>
+                <div class="faq-question" onclick="toggleFaq(this)" >
+                     <span data-i18n="faq.items.5.question">¿Cómo mejora SafeWare mi negocio?</span>
+                    <span class="material-icons faq-arrow" style="color: #263D67;" id="faq-arrow">expand_more</span>
                 </div>
                 <div class="faq-answer">
                     <p data-i18n="faq.items.5.answer">SafeWare reduce costos al prevenir incidentes, optimiza operaciones con automatización y proporciona informes detallados para tomar decisiones informadas.</p>
@@ -276,17 +296,17 @@
 </section>
 
     <!-- contactanos -->
+<!-- CONTACTO -->
 <section id="contact" class="contact-section">
   <div class="contact-container">
-    <!-- Columna izquierda -->
+    <!-- Columna izquierda: información -->
     <div class="contact-info">
       <h2 data-i18n="contact.title">
-        Hablemos de cómo<br>
-        podemos <span>proteger tu negocio.</span>
+        Hablemos de cómo podemos <span>proteger tu negocio.</span>
       </h2>
       <p data-i18n="contact.description">
-        Estamos aquí para ayudarte a proteger lo que más importa. <br>
-        Escríbenos y descubre cómo <b>SafeWare</b> puede optimizar la seguridad y el mantenimiento en tus instalaciones.
+        Estamos aquí para ayudarte a proteger lo que más importa. Escríbenos y descubre cómo
+        <b>SafeWare</b> puede optimizar la seguridad y el mantenimiento en tus instalaciones.
       </p>
 
       <ul class="contact-details">
@@ -314,60 +334,113 @@
       </ul>
     </div>
 
-    <!-- Columna derecha -->
+    <!-- Columna derecha: formulario -->
     <div class="contact-form">
       <h3 data-i18n="contact.form.title">Envíanos un mensaje</h3>
       <form>
-        <input type="text" data-i18n-placeholder="contact.form.name" placeholder="Nombre completo" required>
-        <input type="email" data-i18n-placeholder="contact.form.email" placeholder="Correo electrónico" required>
-        <input type="text" data-i18n-placeholder="contact.form.company" placeholder="Empresa (Opcional)">
-        <textarea data-i18n-placeholder="contact.form.message" placeholder="Mensaje" rows="4" required></textarea>
+        <input
+          type="text"
+          data-i18n-placeholder="contact.form.name"
+          placeholder="Nombre completo"
+          required
+        >
+        <input
+          type="email"
+          data-i18n-placeholder="contact.form.email"
+          placeholder="Correo electrónico"
+          required
+        >
+        <input
+          type="text"
+          data-i18n-placeholder="contact.form.company"
+          placeholder="Empresa (Opcional)"
+        >
+        <textarea
+          data-i18n-placeholder="contact.form.message"
+          placeholder="Mensaje"
+          rows="4"
+          required
+        ></textarea>
         <button type="submit" data-i18n="contact.form.button">Contáctanos</button>
       </form>
     </div>
   </div>
 </section>
 
-    <!-- FOOTER -->
-    <footer class="footer-section">
-    <div class="footer-content">
-       <div class="footer-logo">
-            <img src="assets/img/logo.png" alt="SafeWareLogo">
-          </div>
-        <div class="footer-column">
-            <h3>SafeWare</h3>
-            <p>Protegiendo tu industria con tecnología avanzada.</p>
-            <div class="footer-social">
-                <a href="#" aria-label="Facebook"><span class="material-icons">facebook</span></a>
-                <a href="#" aria-label="Correo"><span class="material-icons">mail</span></a>
-                <a href="#" aria-label="LinkedIn"><span class="material-icons">linkedin</span></a>
-            </div>
-        </div>
-        <div class="footer-column">
-            <h3>Enlaces Útiles</h3>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#features">Características</a></li>
-                <li><a href="#about-section">Nosotros</a></li>
-                <li><a href="#plans">Planes</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>Contáctanos</h3>
-            <p><span class="material-icons">phone</span> +1 234 567 890</p>
-            <p><span class="material-icons">email</span> info@safeware.com</p>
-            <p><span class="material-icons">location_on</span> 123 Calle Segura, Ciudad, País</p>
-        </div>
+<!-- FOOTER -->
+<footer class="footer-section">
+  <div class="footer-content">
+    <!-- Logo -->
+    <div class="footer-logo">
+      <img src="assets/img/logo.png" alt="SafeWare Logo" />
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 SafeWare. Todos los derechos reservados.</p>
+
+    <!-- Columna 1: SafeWare / Descripción / Redes -->
+    <div class="footer-column">
+      <h3 data-i18n="footer.title">SafeWare</h3>
+      <p data-i18n="footer.description">
+        Protegiendo tu industria con tecnología avanzada.
+      </p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook" data-i18n="footer.safeWare.social.facebook"><span class="material-icons">facebook</span></a> 
+         <a href="#" aria-label="Correo" data-i18n="footer.safeWare.social.email"><span class="material-icons">mail</span></a> 
+         <a href="#" aria-label="LinkedIn" data-i18n="footer.safeWare.social.linkedin"><span class="material-icons">linkedin</span></a>
+      </div>
     </div>
+
+    <!-- Columna 2: Enlaces útiles -->
+    <div class="footer-column">
+      <h3 data-i18n="footer.usefulLinks.title">Enlaces Útiles</h3>
+      <ul>
+        <li><a href="#home" data-i18n="footer.usefulLinks.items.0.text">Inicio</a></li>
+        <li><a href="#features" data-i18n="footer.usefulLinks.items.1.text">Características</a></li>
+        <li><a href="#about-section" data-i18n="footer.usefulLinks.items.2.text">Nosotros</a></li>
+        <li><a href="#plans" data-i18n="footer.usefulLinks.items.3.text">Planes</a></li>
+        <li><a href="#contact" data-i18n="footer.usefulLinks.items.4.text">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Contacto -->
+    <div class="footer-column">
+      <h3 data-i18n="footer.contact.title">Contáctanos</h3>
+      <p>
+        <span class="material-icons">phone</span>
+        <span data-i18n="footer.contact.phone">+1 234 567 890</span>
+      </p>
+      <p>
+        <span class="material-icons">email</span>
+        <span data-i18n="footer.contact.email">info@safeware.com</span>
+      </p>
+      <p>
+        <span class="material-icons">location_on</span>
+        <span data-i18n="footer.contact.address">123 Calle Segura, Ciudad, País</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Parte inferior -->
+  <div class="footer-bottom">
+    <p data-i18n="footer.copyright">
+      © 2025 SafeWare. Todos los derechos reservados.
+    </p>
+  </div>
 </footer>
 
+
+<div class="language-switcher-container">
+    <div id="language-switcher">
+        <button class="lang-btn " data-lang="en">EN</button>
+        <button class="lang-btn active" data-lang="es">ES</button>
+    </div>
+</div>
+
 </main>
+
   <script src="assets/scrips/hmenu.js"></script>
   <script src="assets/scrips/DesplegabreQuestions.js"></script>
+  <script src="assets/scrip/local/es.js"></script>
+  <script src="assets/scrip/local/en.js"></script>
+  <script src="assets/scrips/translation.js"></script>
 
 </body>
 </html>

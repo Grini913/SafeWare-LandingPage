@@ -40,7 +40,7 @@ const es =  {
         },
         btnmore: 'Descubre cómo funciona',
     },
-about: {
+    about: {
     title: 'Sobre SafeWare',
     subtitle: 'Combinamos seguridad y monitoreo inteligente en un solo nombre para proteger lo que más importa.',
     mission: {
@@ -66,7 +66,7 @@ about: {
             text: 'Alertas por vibraciones anómalas en maquinaria sensible'
         }
     }
-},
+    },
 
     plans: {
     title: 'Nuestros Planes',
@@ -105,7 +105,7 @@ about: {
             button: 'Seleccionar'
         }
     }
-}, 
+    }, 
     testimonials: {
     title: 'Lo que dicen nuestros clientes',
     subtitle: 'Historias reales de cómo SafeWare mejora la seguridad y eficiencia operativa',
@@ -142,7 +142,7 @@ about: {
             answer: 'SafeWare reduce costos al prevenir incidentes, optimiza operaciones con automatización y proporciona informes detallados para tomar decisiones informadas.'
         }
     }
-  },
+    },
 
     contact: {
     title: 'Hablemos de cómo podemos <span>proteger tu negocio.</span>',
@@ -169,6 +169,33 @@ about: {
             text: '+1 (234) 567-8900'
         }
     }
-},
+    },
+    footer: {
+        title: 'SafeWare', // Título principal del footer (puede ser opcional si usas el logo)
+        description: 'Protegiendo tu industria con tecnología avanzada.',
+        socialLinks: {
+            facebook: 'Facebook',
+            email: 'Correo',
+            linkedin: 'LinkedIn'
+        },
+        usefulLinks: {
+            title: 'Enlaces Útiles',
+            items: [
+                { text: 'Inicio', href: '#home' },
+                { text: 'Características', href: '#features' },
+                { text: 'Nosotros', href: '#about-section' },
+                { text: 'Planes', href: '#plans' },
+                { text: 'Contacto', href: '#contact' }
+            ]
+        },
+        contact: {
+            title: 'Contáctanos',
+            phone: '+1 234 567 890',
+            email: 'info@safeware.com',
+            address: '123 Calle Segura, Ciudad, País'
+        },
+        copyright: '&copy; 2025 SafeWare. Todos los derechos reservados.'
+    },
+   
 
 }
