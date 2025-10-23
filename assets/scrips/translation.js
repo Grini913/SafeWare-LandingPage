@@ -12,6 +12,7 @@ const translation ={
     hero: {
         title: 'SafeWare: Detección inteligente de riesgos en tiempo real.',
         subtitle: 'Un sistema integral diseñado para mantener tu industria segura 24/7',
+        getstarted: 'Comenzar'
     },
     features:{
         htitle: 'LO QUE OFRECEMOS',
@@ -214,6 +215,7 @@ en : {
   hero: {
     title: "SafeWare: Intelligent real-time risk detection.",
     subtitle: "A comprehensive system designed to keep your industry safe 24/7",
+    getstarted: 'Get started'
   },
   features: {
     htitle: "WHAT WE OFFER",
@@ -505,6 +507,10 @@ document.querySelectorAll('#language-switcher .lang-btn').forEach(btn => {
     }
   });
 });
+
+onload = () =>{
+    document.body.classList.remove("container");
+};
 
 // --- Inicialización al cargar
 translatePage(currentLang);
