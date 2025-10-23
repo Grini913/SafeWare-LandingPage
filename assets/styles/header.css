@@ -130,3 +130,41 @@ header {
     }
 
 }
+
+/* Responsive para pantallas muy pequeñas (<400px) */
+@media (max-width: 400px) {
+    header {
+        padding: 2%; /* más espacio pequeño arriba y abajo */
+    }
+
+    .navbar_logo {
+        font-size: 1.2em; /* reducir tamaño del texto */
+    }
+
+    .navbar_logo img {
+        height: 35px; /* logo más pequeño */
+        margin-right: 5%;
+    }
+
+    .navbar__links a {
+        font-size: 0.9em; /* enlaces más pequeños */
+        padding: 5px 0;
+    }
+
+    .buttonC a {
+        padding: 8px 15px;
+        font-size: 0.85em;
+    }
+
+    .hamburguesa {
+        font-size: 1.5em; /* icono más pequeño */
+    }
+
+    .navbar__menu.show {
+        padding: 8%; /* espacio interno mayor para comodidad */
+    }
+
+    .navbar__links li {
+        margin: 8px 0; /* reducir márgenes de enlaces */
+    }
+}
